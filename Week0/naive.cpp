@@ -13,9 +13,13 @@ vec schurProduct(vec v1, vec v2) {
         cout<<"dot product not possible";
         exit(-1);
     }
-
+        vec v3(v1.size);
     // implemented by you, naive schur product
     // start of user code
+        for(int i=0;i<v1.size;i++){
+                v3.arr[i] = v2.arr[i]*v1.arr[i];
+        }
+        return v3;
     // end of user code
 }
 
